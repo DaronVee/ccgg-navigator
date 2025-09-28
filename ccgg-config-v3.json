@@ -1,0 +1,224 @@
+{
+  "modules": {
+    "start-here": {
+      "title": "Start Here",
+      "gives": "Complete orientation and access to all tools",
+      "outcome": "You'll know exactly how to navigate CCGG and which tools to use when",
+      "time": "1-2 hours",
+      "type": "Foundation",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/f46312f2?md=ca911d5ebfb24c7e9004cbee0f55d2dd"
+    },
+    "weekly-qa": {
+      "title": "Weekly Q&A - Submit Your Question",
+      "gives": "Personal video answer to your specific question",
+      "outcome": "You'll get your specific question answered with a personal video response",
+      "time": "Submit anytime",
+      "type": "Support",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/f46312f2?md=ed2a1db00947484c94afc9db92fefe7a"
+    },
+    "video-feedback": {
+      "title": "Personalized Video Feedback",
+      "gives": "Tailored feedback on your implementation",
+      "outcome": "You'll receive tailored feedback on your business, GPT, or content strategy",
+      "time": "Submit via Loom",
+      "type": "Support",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/f46312f2?md=62b6bafce6474226841c45a15d92dba8"
+    },
+    "offer-creation": {
+      "title": "From Idea to High Converting Offer",
+      "gives": "Your winning idea turned into an irresistible offer",
+      "outcome": "You'll have a validated $100M offer ready to sell with proven messaging",
+      "time": "5 days",
+      "type": "Business",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/34787842?md=401a0f00fac44ca7888dc8fd126f3fc0"
+    },
+    "infinite-content": {
+      "title": "Infinite Magnetic AI Content",
+      "gives": "Unlimited content ideas and platform-specific strategies",
+      "outcome": "You'll never run out of content and each post will attract ideal clients",
+      "time": "3-4 hours",
+      "type": "Content",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/ec788425?md=5efb1c6f4c2f4ec5a8743a1a08d9af89"
+    },
+    "lead-magnets": {
+      "title": "Irresistible Lead Magnets with AI",
+      "gives": "Automated lead generation that converts",
+      "outcome": "You'll have a lead magnet that generates qualified leads on autopilot",
+      "time": "4-5 hours",
+      "type": "Business",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/0cf6c77f?md=ef4278bf8daa4345acbb13d78338491f"
+    },
+    "gpt-lab": {
+      "title": "The GPT Lab",
+      "gives": "Custom GPTs built for your specific needs",
+      "outcome": "You'll have working GPTs solving your exact business problems",
+      "time": "2-3 hours",
+      "type": "Technical",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/3f602029?md=16eb12a78530471aa88c4ad7be7a0304"
+    },
+    "gpt-express": {
+      "title": "GPT Express Mastery",
+      "gives": "Ability to build any GPT in 30 minutes",
+      "outcome": "You'll build professional GPTs faster than hiring a developer",
+      "time": "3-4 hours",
+      "type": "Technical",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/8ed3eeed?md=8d7fd914ce354071a64b09caefee187f"
+    },
+    "fractal-toolbox": {
+      "title": "GPT Express Fractal Toolbox",
+      "gives": "GPTs that create GPTs for you",
+      "outcome": "You'll 10x your GPT creation speed with meta-GPT builders",
+      "time": "2 hours",
+      "type": "Technical",
+      "status": "live",
+      "access": "annual",
+      "url": "https://www.skool.com/ccgg/classroom/5f69b6ea?md=bef116fd05fa47d2805629859562bbde"
+    },
+    "ai-growth-engine": {
+      "title": "AI Growth Engine",
+      "gives": "Your personal AI business assistant",
+      "outcome": "You'll have an AI system handling your daily business operations",
+      "time": "5-6 hours",
+      "type": "Advanced",
+      "status": "coming-soon",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/be4152a2?md=6719bc8185674dd5bbc29a95f05d2319"
+    },
+    "money-printing": {
+      "title": "Money-Printing with GPTs",
+      "gives": "Multiple ways to monetize your GPTs",
+      "outcome": "You'll be selling GPT services or products for recurring revenue",
+      "time": "4-5 hours",
+      "type": "Advanced",
+      "status": "coming-soon",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/fb12bc52?md=5615ee2d01164750a0fab61b68404475"
+    },
+    "better-call-daron": {
+      "title": "Better Call Daron (1-on-1)",
+      "gives": "Direct strategic guidance from Daron",
+      "outcome": "You'll have a clear action plan tailored to your specific situation",
+      "time": "1 hour",
+      "type": "Support",
+      "status": "live",
+      "access": "annual",
+      "url": "https://www.skool.com/ccgg/classroom/ce1386aa?md=efe36aab9e92454eb37aaac303e9a07b"
+    },
+    "ai-leaders-challenge": {
+      "title": "AI Leaders - Master Custom GPT Creation",
+      "gives": "5-day intensive with daily lessons and 1-on-1 supervision",
+      "outcome": "You'll master GPT creation with daily lessons, 1-on-1 supervision from Daron, and exclusive tools",
+      "time": "5-day intensive",
+      "type": "Technical",
+      "status": "live",
+      "access": "annual",
+      "url": "https://www.skool.com/ai-profits-booster-9771/classroom/71a26b16?md=16bcc593efcc4cce93b9072735e38a2a"
+    },
+    "ai-tools": {
+      "title": "AI Tools I Recommend",
+      "gives": "Curated list of AI tools with best output/cost ratio",
+      "outcome": "You'll discover the best AI tools that maximize output/cost ratio",
+      "time": "Reference",
+      "type": "Resources",
+      "status": "live",
+      "access": "all",
+      "url": "https://docs.google.com/document/d/1Ko7xViRd4QIVRH2tfjRpMUFrcsEqgZW35Fe8L-kR6L4/edit"
+    },
+    "live-calls": {
+      "title": "Live Q&A Calls",
+      "gives": "Direct support and community wisdom",
+      "outcome": "You'll get your questions answered live and learn from others' questions",
+      "time": "Weekly at 1 PM CET",
+      "type": "Support",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/f8ff1316?md=d2314c78dad64836b765bf234b782171"
+    }
+  },
+  
+  "paths": {
+    "content": {
+      "goal": "Generate content that brings clients",
+      "description": "Perfect for experts and coaches who want their content to drive real business results",
+      "modules": ["infinite-content", "lead-magnets", "offer-creation"]
+    },
+    "offer": {
+      "goal": "Create and sell an irresistible offer",
+      "description": "For entrepreneurs ready to package their expertise into something people want to buy",
+      "modules": ["offer-creation", "lead-magnets", "infinite-content"]
+    },
+    "gpt": {
+      "goal": "Build and monetize custom GPTs",
+      "description": "Learn to create AI tools that solve problems and generate revenue",
+      "modules": ["gpt-express", "money-printing", "fractal-toolbox", "ai-leaders-challenge", "gpt-lab"]
+    },
+    "knowledge": {
+      "goal": "Turn my expertise into scalable AI tools",
+      "description": "Transform your unique knowledge into automated systems that work 24/7",
+      "modules": ["gpt-express", "ai-growth-engine", "offer-creation", "lead-magnets", "infinite-content", "fractal-toolbox", "ai-leaders-challenge", "gpt-lab"]
+    },
+    "sales": {
+      "goal": "Get better leads and close more deals",
+      "description": "Optimize your entire sales pipeline with AI-powered systems",
+      "modules": ["offer-creation", "lead-magnets", "infinite-content"]
+    },
+    "automate": {
+      "goal": "Automate my business with AI",
+      "description": "Build comprehensive AI systems to handle your business operations",
+      "modules": ["ai-growth-engine", "gpt-express", "fractal-toolbox", "ai-leaders-challenge", "gpt-lab", "better-call-daron", "ai-tools"]
+    },
+    "question": {
+      "goal": "I have a specific question or problem to solve",
+      "description": "Get personalized help through our support system, from community Q&A to direct 1-on-1 guidance",
+      "modules": ["live-calls", "weekly-qa", "video-feedback", "gpt-lab", "better-call-daron"]
+    }
+  },
+  
+  "settings": {
+    "appName": "CCGG Navigator",
+    "tagline": "Custom GPTs & AI tools to grow your business",
+    "communityUrl": "https://www.skool.com/ccgg",
+    "version": "3.1",
+    "lastUpdated": "2024-01-15",
+    "annualUpgradeUrl": "https://www.skool.com/ccgg/classroom/f46312f2?md=9484a22c15194cd490c222e82e717b8f",
+    "supportEmail": "support@ccgg.com",
+    "annualBenefits": {
+      "headline": "Get direct support and accelerated implementation",
+      "description": "Annual members get exclusive access to premium resources, direct support from Daron, and advanced implementation tools",
+      "buttonText": "Upgrade to Annual →",
+      "featuredModules": [
+        "fractal-toolbox",
+        "better-call-daron",
+        "ai-leaders-challenge"
+      ]
+    }
+  },
+  
+  "statusDescriptions": {
+    "live": "Available now",
+    "coming-soon": "Coming soon",
+    "beta": "In beta testing"
+  },
+  
+  "accessDescriptions": {
+    "all": "Available to all members",
+    "annual": "Annual members only",
+    "vip": "VIP members only"
+  }
+}
