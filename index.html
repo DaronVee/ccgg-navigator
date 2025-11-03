@@ -150,26 +150,24 @@
         }
 
         .logo {
-            background: var(--glass-white);
-            backdrop-filter: blur(10px);
-            color: var(--color-primary);
             width: 56px;
             height: 56px;
             border-radius: var(--radius-xl);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: var(--font-display);
-            font-weight: 800;
-            font-size: var(--font-size-lg);
-            box-shadow: var(--shadow-glass);
-            border: 1px solid var(--glass-border);
             transition: var(--transition-smooth);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: var(--radius-xl);
         }
 
         .logo:hover {
             transform: translateY(-2px) scale(1.05);
-            box-shadow: var(--shadow-xl);
         }
 
         .brand-text h1 {
@@ -408,6 +406,14 @@
             color: white;
             border-color: rgba(245, 158, 11, 0.3);
             box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+        }
+
+        .badge-diamond {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.95), rgba(245, 158, 11, 0.95));
+            color: #78350f;
+            border-color: rgba(251, 191, 36, 0.4);
+            box-shadow: 0 4px 16px rgba(251, 191, 36, 0.4), 0 0 20px rgba(251, 191, 36, 0.2);
+            font-weight: 700;
         }
 
         .badge-soon {
@@ -765,10 +771,10 @@
     <header>
         <div class="header-content">
             <div class="logo-section">
-                <div class="logo">CCGG</div>
+                <div class="logo"><img src="ccgg-logo.png" alt="CCGG Logo"></div>
                 <div class="brand-text">
                     <h1>CCGG Navigator</h1>
-                    <p>Custom GPTs & AI tools to grow your business</p>
+                    <p>Lean GPT Business, Custom GPTs, AI Employees & Claude Code OS</p>
                 </div>
             </div>
             <span id="overviewBtn" class="overview-button hidden" onclick="showOverview()">See all modules</span>
@@ -784,17 +790,20 @@
             </div>
             
             <h2>What do you want to achieve?</h2>
+            <button class="goal-button" onclick="selectGoal('lean-gpt')">
+                Build a lean, freedom-driven business with AI
+            </button>
+            <button class="goal-button" onclick="selectGoal('gpt')">
+                Build and monetize custom GPTs
+            </button>
+            <button class="goal-button" onclick="selectGoal('claude-code-os-path')">
+                Automate business operations with Claude Code systems
+            </button>
             <button class="goal-button" onclick="selectGoal('content')">
                 Generate content that brings clients
             </button>
             <button class="goal-button" onclick="selectGoal('offer')">
                 Create and sell an irresistible offer
-            </button>
-            <button class="goal-button" onclick="selectGoal('gpt')">
-                Build and monetize custom GPTs
-            </button>
-            <button class="goal-button" onclick="selectGoal('knowledge')">
-                Turn my expertise into scalable AI tools
             </button>
             <button class="goal-button" onclick="selectGoal('sales')">
                 Get better leads and close more deals
@@ -802,41 +811,27 @@
             <button class="goal-button" onclick="selectGoal('automate')">
                 Automate my business with AI
             </button>
+            <button class="goal-button" onclick="selectGoal('knowledge')">
+                Turn my expertise into scalable AI tools
+            </button>
             <button class="goal-button" onclick="selectGoal('question')" style="border-color: #6366f1; background: #f0f9ff;">
                 I have a specific question or problem to solve
             </button>
-            
-            <!-- Don't know where to start section -->
-            <div class="help-section">
-                <h3>Don't know where to start?</h3>
-                <p>
-                    Start with <a href="https://www.skool.com/ccgg/classroom/be4152a2?md=6719bc8185674dd5bbc29a95f05d2319" target="_blank">AI Growth Engine</a> – the highest value AI system that handles your daily operations.
-                    Then master <a href="https://www.skool.com/ccgg/classroom/8ed3eeed?md=8d7fd914ce354071a64b09caefee187f" target="_blank">GPT Express Mastery</a> to build any Custom GPT you need in 30 minutes.
-                </p>
-            </div>
-            
+
             <!-- Annual Benefits Section -->
             <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e5e7eb;">
                 <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 20%, #fff 100%); border-radius: 1rem; padding: 2rem; border: 1px solid #fbbf24;">
                     <div style="text-align: center; margin-bottom: 1.5rem;">
                         <span style="display: inline-block; background: #fbbf24; color: #78350f; padding: 0.25rem 1rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 600; margin-bottom: 1rem;">
-                            ⭐ ANNUAL MEMBERSHIP
+                            ⭐ PREMIUM MEMBERSHIP
                         </span>
                         <p style="color: #92400e; font-size: 1rem; font-weight: 500;">
-                            Get direct support and accelerated implementation
+                            Includes: Master GPT Creation ($999) + Master Content Creation with GPTs ($999) + 60-min Consulting Call with Daron ($497)
                         </p>
                     </div>
                     
                     <div id="annualBenefits" class="annual-grid">
                         <!-- Benefits will be inserted here by JavaScript -->
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 1.5rem;">
-                        <a href="https://www.skool.com/ccgg/classroom/f46312f2?md=9484a22c15194cd490c222e82e717b8f" target="_blank" style="display: inline-block; background: #78350f; color: white; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 500; transition: all 0.2s;" 
-                           onmouseover="this.style.background='#92400e'" 
-                           onmouseout="this.style.background='#78350f'">
-                            Upgrade to Annual →
-                        </a>
                     </div>
                 </div>
             </div>
@@ -882,28 +877,37 @@
                     title: 'AI Growth Engine',
                     outcome: 'You\'ll have an AI system handling your daily business operations',
                     time: '5-6 hours',
-                    status: 'coming-soon',
+                    status: 'live',
                     access: 'all',
                     category: 'tech',
-                    url: 'https://www.skool.com/ccgg/classroom/be4152a2?md=6719bc8185674dd5bbc29a95f05d2319'
+                    url: 'https://www.skool.com/ccgg/classroom/fb2f098f?md=59abd95f925246928b2eafa66facdaa7'
                 },
                 'money-printing': {
                     title: 'Money-Printing with GPTs',
                     outcome: 'You\'ll be selling GPT services or products for recurring revenue',
                     time: '4-5 hours',
-                    status: 'coming-soon',
+                    status: 'live',
                     access: 'all',
                     category: 'business',
-                    url: 'https://www.skool.com/ccgg/classroom/fb12bc52?md=5615ee2d01164750a0fab61b68404475'
+                    url: 'https://www.skool.com/ccgg/classroom/31015349?md=2cc74f651ced4125b7192699b45bcfe1'
                 },
                 'infinite-content': {
-                    title: 'Infinite Magnetic AI Content',
+                    title: 'Infinite Magnetic AI Content (Part 1)',
                     outcome: 'You\'ll never run out of content and each post will attract ideal clients',
                     time: '3-4 hours',
                     status: 'live',
                     access: 'all',
                     category: 'business',
-                    url: 'https://www.skool.com/ccgg/classroom/ec788425?md=5efb1c6f4c2f4ec5a8743a1a08d9af89'
+                    url: 'https://www.skool.com/ccgg/classroom/31015349?md=fdcdd4c2d957426a89de320df80b0cfa'
+                },
+                'infinite-content-pt2': {
+                    title: 'Infinite Magnetic AI Content (Part 2)',
+                    outcome: 'You\'ll have teams of custom GPTs creating content automatically',
+                    time: '2-3 hours',
+                    status: 'live',
+                    access: 'all',
+                    category: 'business',
+                    url: 'https://www.skool.com/ccgg/classroom/fb2f098f?md=8927af3af231432d92ad79d51f182871'
                 },
                 'offer-creation': {
                     title: 'From Idea to High Converting Offer',
@@ -912,7 +916,7 @@
                     status: 'live',
                     access: 'all',
                     category: 'business',
-                    url: 'https://www.skool.com/ccgg/classroom/34787842?md=401a0f00fac44ca7888dc8fd126f3fc0'
+                    url: 'https://www.skool.com/ccgg/classroom/fb2f098f?md=5a5650a1cb2a47d086ba217cb7820e9b'
                 },
                 'lead-magnets': {
                     title: 'Irresistible Lead Magnets with AI',
@@ -921,7 +925,25 @@
                     status: 'live',
                     access: 'all',
                     category: 'business',
-                    url: 'https://www.skool.com/ccgg/classroom/0cf6c77f?md=ef4278bf8daa4345acbb13d78338491f'
+                    url: 'https://www.skool.com/ccgg/classroom/fb2f098f?md=7b9923b9851848a783eab8f3ea4d8d96'
+                },
+                'ai-sales-mastery': {
+                    title: 'AI Sales Mastery',
+                    outcome: 'You\'ll have AI-powered sales workflows for case studies, launches, emails, and VSLs',
+                    time: '3-4 hours',
+                    status: 'live',
+                    access: 'all',
+                    category: 'business',
+                    url: 'https://www.skool.com/ccgg/classroom/fb2f098f?md=32e03690d0a548ed9fecdd8d65bf05ce'
+                },
+                'ccgg-affiliation': {
+                    title: 'CCGG Affiliation Program',
+                    outcome: 'You\'ll earn recurring revenue promoting CCGG with provided tools and training',
+                    time: 'Ongoing program',
+                    status: 'live',
+                    access: 'all',
+                    category: 'business',
+                    url: 'https://www.skool.com/ccgg/classroom/31015349?md=2cc74f651ced4125b7192699b45bcfe1'
                 },
                 'gpt-express': {
                     title: 'GPT Express Mastery',
@@ -930,7 +952,16 @@
                     status: 'live',
                     access: 'all',
                     category: 'tech',
-                    url: 'https://www.skool.com/ccgg/classroom/8ed3eeed?md=8d7fd914ce354071a64b09caefee187f'
+                    url: 'https://www.skool.com/ccgg/classroom/31015349?md=c2841357ddd94fc4a887a75067403ff1'
+                },
+                'claude-code-mastery': {
+                    title: 'Claude Code Mastery for Business',
+                    outcome: 'You\'ll leverage Claude Code for business automation and productivity',
+                    time: '2-3 hours',
+                    status: 'coming-soon',
+                    access: 'all',
+                    category: 'tech',
+                    url: 'https://www.skool.com/ccgg/classroom/31015349?md=ab1607f0cd50451b968138527381e703'
                 },
                 'gpt-lab': {
                     title: 'The GPT Lab',
@@ -942,20 +973,31 @@
                     url: 'https://www.skool.com/ccgg/classroom/3f602029?md=16eb12a78530471aa88c4ad7be7a0304'
                 },
                 'ai-leaders-challenge': {
-                    title: 'AI Leaders - Master Custom GPT Creation',
+                    title: 'Master GPT Creation',
                     outcome: 'You\'ll master GPT creation with daily lessons, 1-on-1 supervision from Daron, and exclusive tools',
                     time: '5-day intensive',
                     status: 'live',
-                    access: 'annual',
+                    access: 'premium',
                     category: 'tech',
-                    url: 'https://www.skool.com/ai-profits-booster-9771/classroom/71a26b16?md=16bcc593efcc4cce93b9072735e38a2a'
+                    badge: 'challenge',
+                    url: 'https://www.skool.com/ccgg/classroom/a5c3c73c?md=dc38733e672748c99c7c1f381d76e5c1'
+                },
+                'master-content-gpts': {
+                    title: 'Master Content Creation with GPTs',
+                    outcome: 'You\'ll build automated content creation systems using custom GPTs with daily tasks and templates',
+                    time: '5-day challenge',
+                    status: 'live',
+                    access: 'premium',
+                    category: 'business',
+                    badge: 'challenge',
+                    url: 'https://www.skool.com/ccgg/classroom/a762ad15?md=35956fc0ff6942c89c8b66a38f00360c'
                 },
                 'fractal-toolbox': {
                     title: 'GPT Express Fractal Toolbox',
                     outcome: 'You\'ll 10x your GPT creation speed with meta-GPT builders',
                     time: '2 hours',
                     status: 'live',
-                    access: 'annual',
+                    access: 'premium',
                     category: 'tech',
                     url: 'https://www.skool.com/ccgg/classroom/5f69b6ea?md=bef116fd05fa47d2805629859562bbde'
                 },
@@ -966,7 +1008,7 @@
                     status: 'live',
                     access: 'all',
                     category: 'support',
-                    url: 'https://www.skool.com/ccgg/classroom/f8ff1316?md=d2314c78dad64836b765bf234b782171'
+                    url: 'https://www.skool.com/ccgg/calendar'
                 },
                 'ai-tools': {
                     title: 'AI Tools I Recommend',
@@ -976,6 +1018,15 @@
                     access: 'all',
                     category: 'tech',
                     url: 'https://docs.google.com/document/d/1Ko7xViRd4QIVRH2tfjRpMUFrcsEqgZW35Fe8L-kR6L4/edit'
+                },
+                'workshops-live-calls': {
+                    title: 'Workshop & Live Calls',
+                    outcome: 'You\'ll access recordings of live workshops and Q&A sessions with Daron',
+                    time: 'Ongoing',
+                    status: 'live',
+                    access: 'all',
+                    category: 'support',
+                    url: 'https://www.skool.com/ccgg/classroom/31015349?md=8a773755a80a49b488eb94a052602e3d'
                 },
                 'weekly-qa': {
                     title: 'Weekly Q&A - Submit Your Question',
@@ -991,7 +1042,7 @@
                     outcome: 'You\'ll receive tailored feedback on your business, GPT, or content strategy',
                     time: 'Submit via Loom',
                     status: 'live',
-                    access: 'annual',
+                    access: 'premium',
                     category: 'support',
                     url: 'https://www.skool.com/ccgg/classroom/f46312f2?md=62b6bafce6474226841c45a15d92dba8'
                 },
@@ -1000,40 +1051,68 @@
                     outcome: 'You\'ll get direct personal guidance and a custom action plan from Daron',
                     time: '1 hour call',
                     status: 'live',
-                    access: 'annual',
+                    access: 'premium',
                     category: 'support',
                     url: 'https://www.skool.com/ccgg/classroom/ce1386aa?md=efe36aab9e92454eb37aaac303e9a07b'
+                },
+                'lean-gpt-essentials': {
+                    title: 'Lean GPT Business Essentials',
+                    outcome: 'You\'ll understand the Lean GPT Business model and how to build freedom-driven businesses with AI',
+                    time: '2-3 hours',
+                    status: 'coming-soon',
+                    access: 'all',
+                    category: 'business',
+                    url: 'https://www.skool.com/ccgg/classroom/31015349?md=499eb5d9421d48b6a8b4abf4e8c69ab8'
+                },
+                'claude-code-os': {
+                    title: 'Claude Code Business OS',
+                    outcome: 'You\'ll deploy AI business operating systems (agents, skills, workflows) to automate operations',
+                    time: 'Ongoing implementation',
+                    status: 'live',
+                    access: 'high-ticket',
+                    category: 'tech',
+                    badge: 'premium-otp',
+                    url: 'https://www.skool.com/ccgg/classroom/78cedbc8?md=142bffa55ef4440aa87bb2ab2509fede'
                 }
             },
             
             paths: {
-                'content': {
-                    goal: 'Generate content that brings clients',
-                    modules: ['infinite-content', 'lead-magnets', 'offer-creation']
-                },
-                'offer': {
-                    goal: 'Create and sell an irresistible offer',
-                    modules: ['offer-creation', 'lead-magnets', 'infinite-content']
+                'lean-gpt': {
+                    goal: 'Build a lean, freedom-driven business with AI',
+                    modules: ['lean-gpt-essentials', 'ai-growth-engine', 'claude-code-mastery', 'claude-code-os']
                 },
                 'gpt': {
                     goal: 'Build and monetize custom GPTs',
-                    modules: ['gpt-express', 'money-printing', 'fractal-toolbox', 'ai-leaders-challenge', 'gpt-lab']
+                    modules: ['gpt-express', 'ai-leaders-challenge', 'money-printing']
                 },
-                'knowledge': {
-                    goal: 'Turn my expertise into scalable AI tools',
-                    modules: ['gpt-express', 'ai-growth-engine', 'offer-creation', 'lead-magnets', 'infinite-content', 'fractal-toolbox', 'ai-leaders-challenge', 'gpt-lab']
+                'claude-code-os-path': {
+                    goal: 'Automate business operations with Claude Code systems',
+                    modules: ['claude-code-mastery', 'better-call-daron', 'claude-code-os']
+                },
+                'content': {
+                    goal: 'Generate content that brings clients',
+                    modules: ['infinite-content', 'infinite-content-pt2', 'master-content-gpts', 'lead-magnets', 'offer-creation']
+                },
+                'offer': {
+                    goal: 'Create and sell an irresistible offer',
+                    modules: ['offer-creation', 'infinite-content', 'infinite-content-pt2', 'lead-magnets', 'ai-sales-mastery']
                 },
                 'sales': {
                     goal: 'Get better leads and close more deals',
-                    modules: ['offer-creation', 'lead-magnets', 'infinite-content']
+                    modules: ['offer-creation', 'lead-magnets', 'ai-sales-mastery', 'infinite-content', 'infinite-content-pt2']
                 },
                 'automate': {
                     goal: 'Automate my business with AI',
-                    modules: ['ai-growth-engine', 'gpt-express', 'fractal-toolbox', 'ai-leaders-challenge', 'gpt-lab', 'better-call-daron', 'ai-tools']
+                    modules: ['ai-growth-engine', 'gpt-express', 'claude-code-mastery', 'ai-leaders-challenge', 'better-call-daron', 'claude-code-os']
+                },
+                'knowledge': {
+                    goal: 'Turn my expertise into scalable AI tools',
+                    modules: ['gpt-express', 'ai-leaders-challenge', 'claude-code-mastery', 'ai-growth-engine', 'offer-creation', 'infinite-content-pt2']
                 },
                 'question': {
                     goal: 'I have a specific question or problem to solve',
-                    modules: ['live-calls', 'weekly-qa', 'video-feedback', 'gpt-lab', 'better-call-daron']
+                    description: 'Start by posting your question in the <a href="https://www.skool.com/ccgg" target="_blank">CCGG Community</a>, then escalate to live calls or 1-on-1 consultation as needed.',
+                    modules: ['live-calls', 'better-call-daron']
                 }
             }
         };
@@ -1082,27 +1161,36 @@
         function loadAnnualBenefits() {
             const container = document.getElementById('annualBenefits');
             if (!container) return;
-            
-            const annualModules = Object.entries(CONFIG.modules).filter(([id, module]) => 
-                module.access === 'annual'
+
+            const premiumBenefits = Object.entries(CONFIG.modules).filter(([id, module]) =>
+                module.access === 'premium' && ['ai-leaders-challenge', 'master-content-gpts', 'better-call-daron'].includes(id)
             );
-            
+
             container.innerHTML = '';
-            annualModules.forEach(([id, module]) => {
+            premiumBenefits.forEach(([id, module]) => {
                 const benefitDiv = document.createElement('div');
                 benefitDiv.style.cssText = 'background: white; padding: 1rem; border-radius: 0.5rem; border: 1px solid #fde68a;';
-                
+
+                let valueText = '';
+                if (id === 'ai-leaders-challenge') {
+                    valueText = ' (Value: $999)';
+                } else if (id === 'master-content-gpts') {
+                    valueText = ' (Value: $999)';
+                } else if (id === 'better-call-daron') {
+                    valueText = ' (Value: $497)';
+                }
+
                 let statusBadge = '';
                 if (module.status === 'coming-soon') {
                     statusBadge = '<span style="display: inline-block; background: #f3f4f6; color: #6b7280; padding: 0.125rem 0.5rem; border-radius: 0.25rem; font-size: 0.625rem; margin-bottom: 0.5rem;">COMING SOON</span>';
                 }
-                
+
                 benefitDiv.innerHTML = `
                     ${statusBadge}
-                    <div style="font-weight: 600; color: #78350f; margin-bottom: 0.25rem; font-size: 0.875rem;">${module.title}</div>
+                    <div style="font-weight: 600; color: #78350f; margin-bottom: 0.25rem; font-size: 0.875rem;">${module.title}${valueText}</div>
                     <div style="font-size: 0.75rem; color: #92400e; line-height: 1.4;">${module.outcome}</div>
                 `;
-                
+
                 container.appendChild(benefitDiv);
             });
         }
@@ -1124,6 +1212,15 @@
             const container = document.getElementById('roadmapContent');
             container.innerHTML = '';
 
+            // Add path description if it exists (e.g., for question path)
+            const pathData = CONFIG.paths[currentProfile];
+            if (pathData.description) {
+                const descriptionDiv = document.createElement('div');
+                descriptionDiv.style.cssText = 'background: var(--gradient-card); border: 1px solid var(--glass-border); border-radius: var(--radius-xl); padding: var(--space-4); margin-bottom: var(--space-6); color: var(--color-text-secondary); line-height: 1.6;';
+                descriptionDiv.innerHTML = pathData.description;
+                container.appendChild(descriptionDiv);
+            }
+
             currentPath.forEach((moduleId, index) => {
                 const module = CONFIG.modules[moduleId];
                 if (!module) return;
@@ -1143,8 +1240,14 @@
                 if (index === 0 && moduleId !== 'start-here') {
                     badges += '<span class="badge badge-start">Start here</span>';
                 }
-                if (module.access === 'annual') {
-                    badges += '<span class="badge badge-annual">⭐ Annual</span>';
+                if (module.badge === 'challenge') {
+                    badges += '<span class="badge badge-challenge">🏆 Challenge</span>';
+                }
+                if (module.badge === 'premium-otp' || module.access === 'high-ticket') {
+                    badges += '<span class="badge badge-diamond">💎 Diamond</span>';
+                }
+                if (module.access === 'premium') {
+                    badges += '<span class="badge badge-annual">⭐ Premium</span>';
                 }
                 if (module.status === 'coming-soon') {
                     badges += '<span class="badge badge-soon">Coming soon</span>';
@@ -1193,20 +1296,31 @@
         function showOverview() {
             document.getElementById('roadmapSection').classList.add('hidden');
             document.getElementById('overviewSection').classList.remove('hidden');
-            
+
             const container = document.getElementById('overviewContent');
             container.innerHTML = '';
-            
-            Object.entries(CONFIG.modules).forEach(([id, module]) => {
+
+            // Filter out obsolete modules
+            const obsoleteModules = ['start-here', 'weekly-qa', 'video-feedback', 'fractal-toolbox', 'gpt-lab'];
+
+            Object.entries(CONFIG.modules)
+                .filter(([id, module]) => !obsoleteModules.includes(id))
+                .forEach(([id, module]) => {
                 const moduleDiv = document.createElement('div');
                 moduleDiv.style.marginBottom = '1rem';
                 moduleDiv.style.padding = '1rem';
-                moduleDiv.style.background = module.access === 'annual' ? '#fef3c7' : '#f9fafb';
+                moduleDiv.style.background = (module.access === 'premium' || module.access === 'high-ticket') ? '#fef3c7' : '#f9fafb';
                 moduleDiv.style.borderRadius = '0.5rem';
-                
+
                 let badges = '';
-                if (module.access === 'annual') {
-                    badges += '<span class="badge badge-annual">⭐ Annual</span>';
+                if (module.badge === 'challenge') {
+                    badges += '<span class="badge badge-challenge">🏆 Challenge</span>';
+                }
+                if (module.badge === 'premium-otp' || module.access === 'high-ticket') {
+                    badges += '<span class="badge badge-diamond">💎 Diamond</span>';
+                }
+                if (module.access === 'premium') {
+                    badges += '<span class="badge badge-annual">⭐ Premium</span>';
                 }
                 if (module.status === 'coming-soon') {
                     badges += '<span class="badge badge-soon">Coming soon</span>';
