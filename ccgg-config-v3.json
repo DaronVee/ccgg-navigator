@@ -60,16 +60,6 @@
       "access": "all",
       "url": "https://www.skool.com/ccgg/classroom/0cf6c77f?md=ef4278bf8daa4345acbb13d78338491f"
     },
-    "gpt-lab": {
-      "title": "The GPT Lab",
-      "gives": "Custom GPTs built for your specific needs",
-      "outcome": "You'll have working GPTs solving your exact business problems",
-      "time": "2-3 hours",
-      "type": "Technical",
-      "status": "live",
-      "access": "all",
-      "url": "https://www.skool.com/ccgg/classroom/3f602029?md=16eb12a78530471aa88c4ad7be7a0304"
-    },
     "gpt-express": {
       "title": "GPT Express Mastery",
       "gives": "Ability to build any GPT in 30 minutes",
@@ -96,9 +86,9 @@
       "outcome": "You'll have an AI system handling your daily business operations",
       "time": "5-6 hours",
       "type": "Advanced",
-      "status": "coming-soon",
+      "status": "live",
       "access": "all",
-      "url": "https://www.skool.com/ccgg/classroom/be4152a2?md=6719bc8185674dd5bbc29a95f05d2319"
+      "url": "https://www.skool.com/ccgg/classroom/fb2f098f?md=59abd95f925246928b2eafa66facdaa7"
     },
     "money-printing": {
       "title": "Money-Printing with GPTs",
@@ -106,9 +96,9 @@
       "outcome": "You'll be selling GPT services or products for recurring revenue",
       "time": "4-5 hours",
       "type": "Advanced",
-      "status": "coming-soon",
+      "status": "live",
       "access": "all",
-      "url": "https://www.skool.com/ccgg/classroom/fb12bc52?md=5615ee2d01164750a0fab61b68404475"
+      "url": "https://www.skool.com/ccgg/classroom/31015349?md=2cc74f651ced4125b7192699b45bcfe1"
     },
     "better-call-daron": {
       "title": "Better Call Daron (1-on-1)",
@@ -149,6 +139,46 @@
       "status": "live",
       "access": "all",
       "url": "https://www.skool.com/ccgg/classroom/f8ff1316?md=d2314c78dad64836b765bf234b782171"
+    },
+    "ai-sales-mastery": {
+      "title": "AI Sales Mastery",
+      "gives": "AI-powered sales systems and outreach automation",
+      "outcome": "You'll have AI-powered sales workflows for case studies, launches, emails, and VSLs",
+      "time": "3-4 hours",
+      "type": "Business",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/fb2f098f?md=32e03690d0a548ed9fecdd8d65bf05ce"
+    },
+    "claude-code-mastery": {
+      "title": "Claude Code Mastery for Business",
+      "gives": "Business automation and productivity with Claude Code",
+      "outcome": "You'll leverage Claude Code for business automation and productivity",
+      "time": "2-3 hours",
+      "type": "Technical",
+      "status": "live",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/31015349?md=ab1607f0cd50451b968138527381e703"
+    },
+    "lean-gpt-essentials": {
+      "title": "Lean GPT Business Essentials",
+      "gives": "Understanding of Lean GPT Business model and AI-driven freedom businesses",
+      "outcome": "You'll understand the Lean GPT Business model and how to build freedom-driven businesses with AI",
+      "time": "2-3 hours",
+      "type": "Foundation",
+      "status": "coming-soon",
+      "access": "all",
+      "url": "https://www.skool.com/ccgg/classroom/31015349?md=499eb5d9421d48b6a8b4abf4e8c69ab8"
+    },
+    "claude-code-os": {
+      "title": "Claude Code Business OS",
+      "gives": "AI business operating systems (agents, skills, workflows)",
+      "outcome": "You'll deploy AI business operating systems (agents, skills, workflows) to automate operations",
+      "time": "Ongoing implementation",
+      "type": "Advanced",
+      "status": "live",
+      "access": "paid-product",
+      "url": "https://www.skool.com/ccgg/classroom/78cedbc8?md=142bffa55ef4440aa87bb2ab2509fede"
     }
   },
   
@@ -166,12 +196,12 @@
     "gpt": {
       "goal": "Build and monetize custom GPTs",
       "description": "Learn to create AI tools that solve problems and generate revenue",
-      "modules": ["gpt-express", "money-printing", "fractal-toolbox", "ai-leaders-challenge", "gpt-lab"]
+      "modules": ["gpt-express", "money-printing", "fractal-toolbox", "ai-leaders-challenge"]
     },
     "knowledge": {
       "goal": "Turn my expertise into scalable AI tools",
       "description": "Transform your unique knowledge into automated systems that work 24/7",
-      "modules": ["gpt-express", "ai-growth-engine", "offer-creation", "lead-magnets", "infinite-content", "fractal-toolbox", "ai-leaders-challenge", "gpt-lab"]
+      "modules": ["gpt-express", "ai-growth-engine", "offer-creation", "lead-magnets", "infinite-content", "fractal-toolbox", "ai-leaders-challenge"]
     },
     "sales": {
       "goal": "Get better leads and close more deals",
@@ -181,12 +211,12 @@
     "automate": {
       "goal": "Automate my business with AI",
       "description": "Build comprehensive AI systems to handle your business operations",
-      "modules": ["ai-growth-engine", "gpt-express", "fractal-toolbox", "ai-leaders-challenge", "gpt-lab", "better-call-daron", "ai-tools"]
+      "modules": ["ai-growth-engine", "gpt-express", "fractal-toolbox", "ai-leaders-challenge", "better-call-daron", "ai-tools"]
     },
     "question": {
       "goal": "I have a specific question or problem to solve",
       "description": "Get personalized help through our support system, from community Q&A to direct 1-on-1 guidance",
-      "modules": ["live-calls", "weekly-qa", "video-feedback", "gpt-lab", "better-call-daron"]
+      "modules": ["live-calls", "weekly-qa", "video-feedback", "better-call-daron"]
     }
   },
   
